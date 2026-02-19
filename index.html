@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>حل موضوع بكالوريا مادة الرياضيات - منصة نوفل</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Cairo', sans-serif; 
+            background: linear-gradient(135deg, #2c003e 0%, #4b1d82 100%); 
+            padding: 40px 20px; 
+            margin: 0;
+            color: #333;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        /* تصميم الهلالات في الزوايا */
+        .crescent {
+            position: absolute;
+            font-size: 80px;
+            color: #f1c40f;
+            opacity: 0.6;
+            z-index: 0;
+            text-shadow: 0 0 20px rgba(241, 196, 15, 0.5);
+            pointer-events: none;
+        }
+        .top-right { top: 20px; right: 30px; }
+        .top-left { top: 20px; left: 30px; transform: scaleX(-1); }
+        .bottom-right { bottom: 20px; right: 30px; transform: rotate(-90deg); }
+        .bottom-left { bottom: 20px; left: 30px; transform: scaleX(-1) rotate(-90deg); }
+
+        .exam-sheet { 
+            background: #ffffff; 
+            max-width: 900px; 
+            margin: auto; 
+            padding: 50px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+            border-radius: 15px;
+            border-top: 5px solid #8e44ad;
+            position: relative;
+            z-index: 1;
+        }
+        .header { 
+            text-align: center; 
+            border-bottom: 2px dashed #8e44ad; 
+            padding-bottom: 15px; 
+            margin-bottom: 30px; 
+        }
+        .header h2 { color: #2c003e; margin-bottom: 5px; }
+        .header h3 { color: #8e44ad; margin-top: 0; }
+        .exercise { 
+            margin-bottom: 40px; 
+            line-height: 1.8; 
+            background: #fdfaf6;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #e1d5e6;
+        }
+        .exercise-title { 
+            font-weight: bold; 
+            color: #8e44ad; 
+            font-size: 1.3em; 
+            margin-bottom: 15px; 
+            display: block; 
+            border-bottom: 2px solid #8e44ad;
+            padding-bottom: 5px;
+            width: max-content;
+        }
+        .math-center { text-align: center; margin: 15px 0; font-size: 1.2em; overflow-x: auto;}
+        .solution-step { margin-bottom: 15px; }
+        .highlight { color: #c0392b; font-weight: bold; }
+        .result-box { 
+            border: 2px solid #27ae60; 
+            padding: 10px; 
+            border-radius: 8px; 
+            display: inline-block; 
+            background: #e9f7ef; 
+            margin-top: 5px;
+        }
+        .footer { text-align: center; margin-top: 40px; border-top: 1px solid #ccc; padding-top: 15px; font-style: italic; color: #555; }
+        
+        @media print { 
+            .no-print, .crescent { display: none; }
+            body { background: white; padding: 0; }
+            .exam-sheet { box-shadow: none; border: none; padding: 10px; }
+            .exercise { border: none; background: transparent; padding: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="crescent top-right">🌙</div>
+<div class="crescent top-left">🌙</div>
+<div class="crescent bottom-right">🌙</div>
+<div class="crescent bottom-left">🌙</div>
+
+<div class="exam-sheet">
+    <div class="header">
+        <h2>الجمهورية الجزائرية الديمقراطية الشعبية</h2>
+        <h3>وزارة التربية الوطنية - منصة نوفل التعليمية</h3>
+        <p><strong>حل مقترح لموضوع: الرياضيات | الشعبة: علوم تجريبية / تقني رياضي</strong></p>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">حل التمرين الأول (05 نقاط):</span>
+        
+        <div class="solution-step">
+            <strong>1. تعيين الأعداد \(u_1, u_2, u_3\):</strong><br>
+            بما أن المتتالية حسابية، فإن \(u_1, u_2, u_3\) حدود متعاقبة، ومنه حسب الوسط الحسابي: \(u_1 + u_3 = 2u_2\).<br>
+            بالتعويض في المعادلة الأولى \(u_1 + u_2 + u_3 = 15\) نجد:
+            <div class="math-center">\[ 2u_2 + u_2 = 15 \implies 3u_2 = 15 \implies u_2 = 5 \]</div>
+            نعوض \(u_2 = 5\) في المعادلة الثانية \(u_1 \times u_2 \times u_3 = 80\):
+            <div class="math-center">\[ u_1 \times 5 \times u_3 = 80 \implies u_1 \times u_3 = 16 \]</div>
+            لدينا \(u_1 = u_2 - r = 5 - r\) و \(u_3 = u_2 + r = 5 + r\). نعوض في الجداء:
+            <div class="math-center">\[ (5 - r)(5 + r) = 16 \implies 25 - r^2 = 16 \implies r^2 = 9 \]</div>
+            إذن \(r = 3\) أو \(r = -3\). بما أن المتتالية متزايدة تماماً، فإن \(r > 0\)، ومنه \(r = 3\).<br>
+            ومنه: <span class="highlight">\(u_1 = 5 - 3 = 2\)</span> و <span class="highlight">\(u_3 = 5 + 3 = 8\)</span>.
+        </div>
+
+        <div class="solution-step">
+            <strong>2. استنتاج قيمة الأساس والحد الأول:</strong><br>
+            مما سبق وجدنا مباشرة: <span class="result-box">الأساس \(r = 3\) والحد الأول \(u_1 = 2\)</span>.
+        </div>
+
+        <div class="solution-step">
+            <strong>3. عبارة الحد العام \(u_n\):</strong><br>
+            بما أن المتتالية حسابية: \(u_n = u_1 + (n - 1)r\).
+            <div class="math-center">\[ u_n = 2 + 3(n - 1) \implies u_n = 3n - 1 \]</div>
+        </div>
+
+        <div class="solution-step">
+            <strong>4. حساب المجموع \(S_n\) وتعيين \(n\):</strong><br>
+            المجموع \(S_n = u_1 + u_2 + \dots + u_n\) (مجموع \(n\) حداً):
+            <div class="math-center">\[ S_n = \frac{n}{2} (u_1 + u_n) = \frac{n}{2} (2 + 3n - 1) = \frac{n(3n + 1)}{2} \]</div>
+            تعيين \(n\) بحيث \(S_n = 100\):
+            <div class="math-center">\[ \frac{n(3n + 1)}{2} = 100 \implies 3n^2 + n - 200 = 0 \]</div>
+            نحسب المميز \(\Delta = 1^2 - 4(3)(-200) = 1 + 2400 = 2401\). جذر \(\Delta = 49\).<br>
+            الحلول: \(n_1 = \frac{-1 - 49}{6} < 0\) (مرفوض لأن \(n\) عدد طبيعي)، أو \(n_2 = \frac{-1 + 49}{6} = \frac{48}{6} = 8\).<br>
+            إذن: <span class="result-box">\(n = 8\)</span>.
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">حل التمرين الثاني (07 نقاط):</span>
+        
+        <div class="solution-step">
+            <strong>1. البرهان بالتراجع أن \(0 < u_n < 3\):</strong><br>
+            - <em>التحقق من صحة الخاصية من أجل \(n = 0\):</em> لدينا \(u_0 = 1\)، وعليه \(0 < 1 < 3\) محققة.<br>
+            - <em>الفرضية والبرهان:</em> نفرض أن \(0 < u_n < 3\) ونبرهن صحتها من أجل \(n + 1\).<br>
+            ندرس إشارة الفرق \(u_{n+1} - 3\):
+            <div class="math-center">\[ u_{n+1} - 3 = \frac{4u_n + 3}{u_n + 2} - 3 = \frac{4u_n + 3 - 3(u_n + 2)}{u_n + 2} = \frac{u_n - 3}{u_n + 2} \]</div>
+            حسب الفرضية \(u_n < 3 \implies u_n - 3 < 0\) و \(u_n > 0 \implies u_n + 2 > 0\). إذن الكسر سالب تماماً، أي \(u_{n+1} < 3\).<br>
+            وبما أن \(u_n > 0\) فإن \(\frac{4u_n + 3}{u_n + 2} > 0\)، أي \(u_{n+1} > 0\). ومنه الخاصية محققة من أجل كل \(n\).
+        </div>
+
+        <div class="solution-step">
+            <strong>2. دراسة اتجاه التغير والتقارب:</strong><br>
+            ندرس إشارة الفرق \(u_{n+1} - u_n\):
+            <div class="math-center">\[ u_{n+1} - u_n = \frac{4u_n + 3}{u_n + 2} - u_n = \frac{4u_n + 3 - u_n(u_n + 2)}{u_n + 2} = \frac{-u_n^2 + 2u_n + 3}{u_n + 2} \]</div>
+            جذرا ثلاثي الحدود \(-x^2 + 2x + 3\) هما \(3\) و \(-1\). بما أن \(u_n \in (0, 3)\)، فإن المقدار \(-u_n^2 + 2u_n + 3\) يكون موجباً. والمقام موجب. إذن \(u_{n+1} - u_n > 0\).<br>
+            المتتالية \((u_n)\) <strong>متزايدة تماماً</strong>. وبما أنها متزايدة ومحدودة من الأعلى بالعدد **3**، فهي <strong>متقاربة</strong>.
+        </div>
+
+        <div class="solution-step">
+            <strong>3. دراسة المتتالية \((v_n)\):</strong><br>
+            - <em>إثبات أنها هندسية:</em>
+            <div class="math-center">\[ v_{n+1} = \frac{u_{n+1} - 3}{u_{n+1} + 1} = \frac{\frac{u_n - 3}{u_n + 2}}{\frac{4u_n + 3}{u_n + 2} + 1} = \frac{\frac{u_n - 3}{u_n + 2}}{\frac{5u_n + 5}{u_n + 2}} = \frac{u_n - 3}{5(u_n + 1)} = \frac{1}{5} v_n \]</div>
+            إذن \((v_n)\) هندسية أساسها \(q = \frac{1}{5}\)، وحدها الأول \(v_0 = \frac{1 - 3}{1 + 1} = -1\).<br><br>
+            - <em>عبارة \(v_n\) و \(u_n\) بدلالة \(n\):</em><br>
+            \(v_n = v_0 \times q^n = -1 \times (\frac{1}{5})^n = -(\frac{1}{5})^n\).<br>
+            لدينا \(v_n = \frac{u_n - 3}{u_n + 1} \implies v_n u_n + v_n = u_n - 3 \implies u_n(1 - v_n) = v_n + 3 \implies u_n = \frac{v_n + 3}{1 - v_n}\).<br>
+            <div class="math-center">\[ u_n = \frac{3 - (\frac{1}{5})^n}{1 + (\frac{1}{5})^n} \]</div>
+            - <em>حساب النهاية:</em><br>
+            بما أن \(-1 < \frac{1}{5} < 1\) فإن \(\lim_{n \to +\infty} (\frac{1}{5})^n = 0\).
+            <div class="math-center">\[ \lim_{n \to +\infty} u_n = \frac{3 - 0}{1 + 0} = 3 \]</div>
+        </div>
+    </div>
+
+    <div class="exercise">
+        <span class="exercise-title">حل التمرين الثالث (08 نقاط):</span>
+        
+        <div class="solution-step">
+            <strong>1. إثبات أن \(L = 3\):</strong><br>
+            بما أن المتتالية متقاربة نحو \(L\)، ولدينا الدالة المرفقة \(f(x) = \sqrt{x+6}\) مستمرة، فإن \(L\) يحقق: \(L = \sqrt{L + 6}\).<br>
+            بتربيع الطرفين (مع شرط \(L \ge 0\)): \(L^2 = L + 6 \implies L^2 - L - 6 = 0\).<br>
+            حلول المعادلة هي \(L = 3\) و \(L = -2\). المرفوض هو \(-2\) لأن \(a_n \ge 0\). إذن \(L = 3\).
+        </div>
+
+        <div class="solution-step">
+            <strong>2. تبيان العلاقة المطلوبة:</strong><br>
+            نضرب ونقسم في المرافق:
+            <div class="math-center">
+                \[ 3 - a_{n+1} = 3 - \sqrt{a_n + 6} = \frac{(3 - \sqrt{a_n + 6})(3 + \sqrt{a_n + 6})}{3 + \sqrt{a_n + 6}} \]
+                \[ = \frac{9 - (a_n + 6)}{3 + \sqrt{a_n + 6}} = \frac{3 - a_n}{\sqrt{a_n + 6} + 3} \]
+            </div>
+        </div>
+
+        <div class="solution-step">
+            <strong>3. استنتاج المتباينة:</strong><br>
+            بما أن \(a_n \ge 0\) (يمكن إثباتها بسهولة بالتراجع)، فإن \(\sqrt{a_n + 6} \ge \sqrt{6} > 0\).<br>
+            ومنه \(\sqrt{a_n + 6} + 3 > 3\)، وبقلب الطرفين نجد: \(\frac{1}{\sqrt{a_n + 6} + 3} < \frac{1}{3}\).<br>
+            وبما أن \(3 - a_n \ge 0\) (لأن \(a_n \le 3\))، بضرب الطرفين في \((3 - a_n)\) نجد:
+            <div class="math-center">\[ 3 - a_{n+1} \le \frac{1}{3}(3 - a_n) \]</div>
+        </div>
+
+        <div class="solution-step">
+            <strong>4. البرهان بالتراجع على المتباينة والنهاية:</strong><br>
+            - من أجل \(n=0\): \(3 - a_0 = 3 - 2 = 1\)، ولدينا \(0 \le 1 \le (\frac{1}{3})^0 = 1\). محققة.<br>
+            - نفرض أن \(0 \le 3 - a_n \le (\frac{1}{3})^n\) ونبرهن صحتها لـ \(n+1\):<br>
+            مما سبق لدينا \(3 - a_{n+1} \le \frac{1}{3}(3 - a_n)\). ومن الفرضية نجد:
+            <div class="math-center">\[ 3 - a_{n+1} \le \frac{1}{3} \times \left(\frac{1}{3}\right)^n = \left(\frac{1}{3}\right)^{n+1} \]</div>
+            وطبعاً \(3 - a_{n+1} \ge 0\)، فالخاصية محققة من أجل كل \(n\).<br><br>
+            - <em>استنتاج النهاية:</em><br>
+            بما أن \(\lim_{n \to +\infty} (\frac{1}{3})^n = 0\)، فإنه حسب مبرهنة الحصر (الدرك):
+            <div class="math-center">\[ \lim_{n \to +\infty} (3 - a_n) = 0 \implies \lim_{n \to +\infty} a_n = 3 \]</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        "الرياضيات ليست فقط حل معادلات، بل هي فن التفكير المنطقي"<br>
+        <strong>بالتوفيق والنجاح الدائم</strong>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 30px; margin-bottom: 20px;" class="no-print">
+    <button onclick="window.print()" style="padding: 12px 30px; background: #f39c12; color: #fff; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">🖨️ طباعة الحل المرفق</button>
+</div>
+
+</body>
+</html>
